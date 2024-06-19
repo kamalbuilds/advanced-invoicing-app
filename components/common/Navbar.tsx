@@ -77,22 +77,12 @@ const Navbar = () => {
           onMouseEnter={() => setIsDocsHovered(true)}
           onMouseLeave={() => setIsDocsHovered(false)}
         >
-          <a
-            target="_blank"
-            rel="noreferrer noopener"
-            href="https://docs.request.network/building-blocks/templates"
-            className="flex items-center gap-[5px] bg-transparent text-green font-medium text-[14px] lg:text-[16px]"
-          >
-            Integrate in your app
-            <ArrowUpRight />
-          </a>
           <div
             className={`${
               isDocsHovered ? "h-[1.5px]" : "h-[0px]"
             } w-100 bg-green`}
           ></div>
         </div>
-        <Dropdown title="Need help?" items={supportLinks} />
         <Button
           className="px-[14px] lg:px-[20px] text-14px lg:text-[16px] py-[8px]"
           text={
@@ -136,9 +126,6 @@ const Navbar = () => {
                 Integrate in your app
                 <ArrowUpRight />
               </a>
-            </li>
-            <li>
-              <Dropdown title="Need help?" items={supportLinks} />
             </li>
             <li>
               <Button
