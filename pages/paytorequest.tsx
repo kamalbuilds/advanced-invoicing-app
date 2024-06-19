@@ -36,7 +36,7 @@ export default function PaymentPage() {
         await tx.wait(1);
         setMessage('Payment successful');
       } catch (error) {
-        setMessage(error.message);
+        console.log(error);
       }
     };
 
